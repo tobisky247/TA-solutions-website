@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tasolutionsltd.co.uk/sitemap.xml
