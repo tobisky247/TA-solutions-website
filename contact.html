@@ -1,110 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Contact TA Solutions for general enquiries, software development, platform partnerships, and technical services." />
-
-<meta property="og:title" content="Contact — TA Solutions Ltd" />
-<meta property="og:description" content="Reach out to TA Solutions for enquiries about our platforms, services, or partnership opportunities." />
-<meta property="og:image" content="https://tasolutionsltd.co.uk/images/fav-icon.png" />
-<meta property="og:url" content="https://tasolutionsltd.co.uk/contact.html" />
-<meta property="og:type" content="website" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Contact — TA Solutions Ltd" />
-<meta name="twitter:description" content="We're here to support your platform or software needs. Get in touch." />
-<meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/fav-icon.png" />
-
-  <title>Contact – TA Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/fav.icon-white.png" />
-<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Contact – TA Solutions Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>Contact TA Solutions Ltd</title>
+  
+    <meta name="description" content="Get in touch with TA Solutions Ltd to discuss projects, partnerships, or support. Based in the UK and working globally." />
+    <meta name="keywords" content="contact TA Solutions, TA Solutions support, get in touch, software company UK" />
+    <meta name="robots" content="index,follow" />
+  
+    <link rel="canonical" href="https://tasolutionsltd.co.uk/contact.html" />
+  
+    <meta property="og:title" content="Contact TA Solutions Ltd" />
+    <meta property="og:description" content="Speak to TA Solutions Ltd about your digital platform, software idea, or partnership opportunity." />
+    <meta property="og:url" content="https://tasolutionsltd.co.uk/contact.html" />
+    <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact TA Solutions Ltd" />
+    <meta name="twitter:description" content="Contact our team to discuss software, digital platforms or collaboration." />
+    <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
+  
+    <link rel="icon" type="image/png" href="images/fav-icon.png" />
+  
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  
+  <meta name="description" content="Get in touch with TA Solutions Ltd for product enquiries, partnerships and operational support." />
+  <link rel="icon" href="images/fav-icon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
-  <div class="container">
-    <nav class="nav">
-      <a class="logo" href="index.html">
-        <img src="images/TA Solutions Logo dark.svg" alt="TA Solutions Logo" class="logo-img" />
-      </a>
-
-      <button class="nav-toggle" onclick="toggleNav()">☰</button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="services.html">What We Do</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a class="nav-cta" href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </div>
-</header>
+    <header>
+        <div class="container">
+          <nav class="nav">
+      
+              <a class="logo" href="index.html">
+                  <img src="images/TA SOLUTIONS LOGO WHITE.png" alt="TA Solutions Logo" class="logo-img" />
+              </a>
+      
+              <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      
+              <div class="nav-links" id="navLinks">
+                  <a href="index.html">Home</a>
+                  <a href="services.html">What We Do</a>
+                  <a href="products.html">Products</a>
+                  <a href="about.html">About</a>
+                  <a class="nav-cta" href="contact.html">Contact</a>
+              </div>
+      
+          </nav>
+        </div>
+      </header>
+      
 
 <section class="section">
-
- 
-
-  <div class="section-header">
-    <div class="section-kicker">Contact</div>
-    <h1 class="section-title">Get in touch</h1>
-    <p class="section-subtitle">We aim to reply within 2–3 working days.</p>
-  </div>
-
   <div class="container">
+    <div class="section-header">
+      <div class="section-kicker">Contact</div>
+      <h1 class="section-title">Get in touch</h1>
+      <p class="section-subtitle">
+        For product enquiries, partnership discussions or operational questions, reach out using
+        the form below or via email. We aim to reply within 2–3 working days.
+      </p>
+    </div>
+
     <div class="contact-grid">
+      <!-- FORM -->
+      <div class="card contact-card">
+        <h2>Send us a message</h2>
+        <p class="muted">
+          Please include as much context as possible – the product you’re interested in,
+          timelines, and any key requirements or constraints.
+        </p>
 
-      <!-- LEFT — FORM -->
-      <div class="card">
-        <h3>Send Us a Message</h3>
-        <p>If you have any questions, feel free to reach out using the form below.</p>
+        <!-- Note: mailto will open the user's email client.
+             Browsers may show a warning that it's not a secure form because it doesn't
+             submit over HTTPS to a server. -->
+        <form class="contact-form" action="mailto:info@tasolutionsltd.co.uk" method="POST" enctype="text/plain">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="Full Name" required />
 
-        <form class="contact-form" action="mailto:info@tasolutions.co.uk" method="POST" enctype="text/plain">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="Full Name" required>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="Email" required />
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="Email" required>
-
-          <label for="message">Your Message</label>
+          <label for="message">Your message</label>
           <textarea id="message" name="Message" rows="6" required></textarea>
 
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary">Send message</button>
         </form>
       </div>
 
-      <!-- RIGHT — EMAIL + ADDRESS -->
+      <!-- CONTACT DETAILS -->
       <div class="card contact-info">
+        <h2>Contact details</h2>
+
         <h3>Email</h3>
         <p>
-          <strong>General enquiries:</strong><br>
-          info@tasolutionsltd.co.uk
+          General enquiries:<br />
+          <a href="mailto:info@tasolutionsltd.co.uk">info@tasolutionsltd.co.uk</a>
         </p>
 
-        <br>
-
-        <h3>Registered Office</h3>
-        <p>
-          TA Solutions Ltd<br>
-          103 Washway Road<br>
-          Sale, England, M33 7TY<br>
+        <h3 class="mt-3">Registered office</h3>
+        <p class="muted">
+          TA Solutions Ltd<br />
+          9 Cheviot Crescent<br />
+          Milton Keynes, England, MK8 1ER<br />
           United Kingdom
         </p>
       </div>
-
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container footer-inner">
-    <div>© 2025 TA Solutions Ltd.</div>
-  </div>
-</footer>
+    <div class="container footer-inner">
+  
+      <div>
+        © 2025 TA Solutions Ltd. All rights reserved.<br>
+        Registered in England & Wales · Company No: 14922253
+      </div>
+  
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+  
+    </div>
+  </footer>
+  
 
 </body>
 </html>
