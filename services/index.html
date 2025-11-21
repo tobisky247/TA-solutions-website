@@ -16,53 +16,64 @@
     <meta property="og:url" content="https://tasolutionsltd.co.uk/services/">
     <meta property="og:type" content="website">
 
+    <!-- Correct CSS link -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <header>
     <a href="/">
-        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo">
+        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" alt="TA Solutions Logo">
     </a>
-    <nav>
+
+    <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/services/" class="active">Services</a>
         <a href="/products/">Products</a>
-        <a href="/contact/">Contact</a>
+        <a href="/contact/" class="nav-cta">Contact</a>
     </nav>
 </header>
 
 <section class="section">
-    <h1>Our Services</h1>
-    <p class="subtitle">End-to-end digital product development.</p>
+    <div class="container">
 
-    <div class="card-grid">
-        <div class="card">
-            <h3>Platform Development</h3>
-            <p>We build scalable digital platforms for creators, businesses, and communities.</p>
+        <div class="section-header center">
+            <h1 class="section-title">Our Services</h1>
+            <p class="section-subtitle">End-to-end digital product development.</p>
         </div>
 
-        <div class="card">
-            <h3>AI-Driven Tools</h3>
-            <p>Automation and AI-powered intelligence built into your workflows.</p>
-        </div>
+        <div class="grid-3">
 
-        <div class="card">
-            <h3>UX & Product Design</h3>
-            <p>Clean, modern user experiences tailored to your audience.</p>
+            <div class="card">
+                <h3>Platform Development</h3>
+                <p>We build scalable digital platforms for creators, businesses, and communities.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI-Driven Tools</h3>
+                <p>Automation and AI-powered intelligence built into your workflows.</p>
+            </div>
+
+            <div class="card">
+                <h3>UX & Product Design</h3>
+                <p>Clean, modern user experiences tailored to your audience.</p>
+            </div>
+
         </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 TA Solutions Ltd</p>
-    <nav>
-        <a href="/about/">About</a>
-        <a href="/services/">Services</a>
-        <a href="/products/">Products</a>
-        <a href="/contact/">Contact</a>
-    </nav>
+    <div class="container footer-inner">
+        <p>© 2025 TA Solutions Ltd</p>
+        <div class="footer-links">
+            <a href="/about/">About</a>
+            <a href="/services/">Services</a>
+            <a href="/products/">Products</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
 </footer>
 
 </body>
