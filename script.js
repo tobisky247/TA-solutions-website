@@ -1,4 +1,7 @@
 function toggleNav() {
-    document.getElementById("navLinks").classList.toggle("open");
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      navLinks.classList.toggle("open");
+    }
   }
   
