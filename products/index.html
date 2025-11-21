@@ -16,48 +16,72 @@
     <meta property="og:url" content="https://tasolutionsltd.co.uk/products/">
     <meta property="og:type" content="website">
 
+    <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <header>
     <a href="/">
-        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo">
+        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" alt="TA Solutions Logo">
     </a>
-    <nav>
+
+    <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/services/">Services</a>
         <a href="/products/" class="active">Products</a>
-        <a href="/contact/">Contact</a>
+        <a href="/contact/" class="nav-cta">Contact</a>
     </nav>
 </header>
 
 <section class="section">
-    <h1>Our Products</h1>
-    <p class="subtitle">Digital platforms built for creators, businesses and communities.</p>
+    <div class="container">
 
-    <div class="product-card">
-        <h4>Platform</h4>
-        <h2>LuvlyFans</h2>
-        <p>A modern subscription and creator platform supporting global digital creators.</p>
-    </div>
+        <div class="section-header center">
+            <h1 class="section-title">Our Products</h1>
+            <p class="section-subtitle">Digital platforms built for creators, businesses and communities.</p>
+        </div>
 
-    <div class="product-card">
-        <h4>AI Tool</h4>
-        <h2>Document Intelligence</h2>
-        <p>Upload, organise and query documents with advanced AI processing.</p>
+        <div class="products-feature-wrapper">
+
+            <!-- Product 1 -->
+            <div class="product-feature">
+                <div class="product-feature-content">
+                    <span class="product-tag">Platform</span>
+                    <h2 class="product-feature-title">LuvlyFans</h2>
+                    <p class="product-feature-text">
+                        A modern subscription and creator platform supporting global digital creators.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-feature">
+                <div class="product-feature-content">
+                    <span class="product-tag">AI Tool</span>
+                    <h2 class="product-feature-title">Document Intelligence</h2>
+                    <p class="product-feature-text">
+                        Upload, organise and query documents using advanced AI processing.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </section>
 
 <footer>
-    <p>© 2025 TA Solutions Ltd</p>
-    <nav>
-        <a href="/about/">About</a>
-        <a href="/services/">Services</a>
-        <a href="/products/">Products</a>
-        <a href="/contact/">Contact</a>
-    </nav>
+    <div class="container footer-inner">
+        <p>© 2025 TA Solutions Ltd</p>
+        <div class="footer-links">
+            <a href="/about/">About</a>
+            <a href="/services/">Services</a>
+            <a href="/products/">Products</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
 </footer>
 
 </body>
