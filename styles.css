@@ -277,7 +277,27 @@
     border: 1px solid rgba(148, 163, 184, 0.25);
     box-shadow: var(--shadow-soft);
   }
-  
+
+.product-feature {
+  padding: 2.5rem;
+  background: #0b1020;
+  border-radius: 22px;
+  border: 1px solid rgba(148,163,184,0.25);
+}
+
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
   /* ===========================================================
      CONTACT 
      =========================================================== */
@@ -619,4 +639,39 @@
     justify-content: flex-start;
   }
 }
+
+.section-subtitle.wider {
+  max-width: 720px;
+  margin: 0.5rem auto 3rem;
+}
+
+.industry-list {
+  text-align: left;
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  line-height: 1.7;
+}
+
+.cta-block {
+  text-align: left;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.cta-block h2 {
+  margin-bottom: 0.8rem;
+}
+
+.cta-block p {
+  margin-bottom: 1.8rem;
+  color: var(--muted);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 
