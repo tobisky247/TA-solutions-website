@@ -674,4 +674,32 @@
   gap: 1rem;
 }
 
+/* Fix spacing in homepage sections */
+.industry-list {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.cta-block {
+  margin-top: 2rem;
+}
+
+.cta-buttons .btn {
+  min-width: 180px;
+}
+
+/* Ensure product cards align correctly */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
