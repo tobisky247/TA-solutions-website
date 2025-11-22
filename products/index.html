@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products | TA Solutions Ltd</title>
+  <meta charset="UTF-8" />
+  <title>Our Products | TA Solutions Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
-    <meta name="description" content="Explore digital platforms and AI tools created by TA Solutions Ltd including LuvlyFans and Document Intelligence.">
-    <link rel="canonical" href="https://tasolutionsltd.co.uk/products/">
+  <!-- SEO -->
+  <meta name="description" content="Explore digital platforms and AI tools created by TA Solutions Ltd including LuvlyFans and Document Intelligence." />
+  <link rel="canonical" href="https://tasolutionsltd.co.uk/products/" />
 
-    <!-- OG -->
-    <meta property="og:title" content="Products - TA Solutions Ltd">
-    <meta property="og:description" content="Digital platforms and AI tools built for creators and businesses.">
-    <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png">
-    <meta property="og:url" content="https://tasolutionsltd.co.uk/products/">
-    <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TA Solutions Ltd" />
+  <meta property="og:title" content="Products - TA Solutions Ltd" />
+  <meta property="og:description" content="Digital platforms and AI tools built for creators and businesses." />
+  <meta property="og:url" content="https://tasolutionsltd.co.uk/products/" />
+  <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Products - TA Solutions Ltd" />
+  <meta name="twitter:description" content="Digital platforms and AI tools built for creators and businesses." />
+  <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
+
+  <link rel="icon" type="image/png" href="/images/fav-icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
 </head>
+
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="/">
+          <img src="/images/TA SOLUTIONS LOGO WHITE.png"
+               alt="TA Solutions Ltd logo"
+               class="logo-img" />
+        </a>
 
-<header>
-    <a href="/">
-        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" alt="TA Solutions Logo">
-    </a>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
 
-    <nav class="nav-links">
-        <a href="/">Home</a>
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/services/">Services</a>
+          <a href="/products/" class="active">Products</a>
+          <a href="/contact/" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <h1 class="section-title">Our Products</h1>
+        <p class="section-subtitle">
+          Digital platforms and AI tools built for creators, businesses and communities.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.8rem; margin-bottom: 0.4rem;">
+            Platform
+          </h4>
+          <h2 style="margin-bottom: 0.6rem;">LuvlyFans</h2>
+          <p>
+            A modern subscription and creator platform supporting global digital creators.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.8rem; margin-bottom: 0.4rem;">
+            AI Tool
+          </h4>
+          <h2 style="margin-bottom: 0.6rem;">Document Intelligence</h2>
+          <p>
+            Upload, organise and query documents using advanced AI processing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        © 2025 TA Solutions Ltd. All rights reserved.<br />
+        Registered in England &amp; Wales · Company No. 14922253
+      </div>
+      <div class="footer-links">
         <a href="/about/">About</a>
         <a href="/services/">Services</a>
-        <a href="/products/" class="active">Products</a>
-        <a href="/contact/" class="nav-cta">Contact</a>
-    </nav>
-</header>
-
-<section class="section">
-    <div class="container">
-
-        <div class="section-header center">
-            <h1 class="section-title">Our Products</h1>
-            <p class="section-subtitle">Digital platforms built for creators, businesses and communities.</p>
-        </div>
-
-        <div class="products-feature-wrapper">
-
-            <!-- Product 1 -->
-            <div class="product-feature">
-                <div class="product-feature-content">
-                    <span class="product-tag">Platform</span>
-                    <h2 class="product-feature-title">LuvlyFans</h2>
-                    <p class="product-feature-text">
-                        A modern subscription and creator platform supporting global digital creators.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-feature">
-                <div class="product-feature-content">
-                    <span class="product-tag">AI Tool</span>
-                    <h2 class="product-feature-title">Document Intelligence</h2>
-                    <p class="product-feature-text">
-                        Upload, organise and query documents using advanced AI processing.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+      </div>
     </div>
-</section>
-
-<footer>
-    <div class="container footer-inner">
-        <p>© 2025 TA Solutions Ltd</p>
-        <div class="footer-links">
-            <a href="/about/">About</a>
-            <a href="/services/">Services</a>
-            <a href="/products/">Products</a>
-            <a href="/contact/">Contact</a>
-        </div>
-    </div>
-</footer>
-
+  </footer>
 </body>
 </html>
