@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | TA Solutions Ltd</title>
+  <meta charset="UTF-8" />
+  <title>Our Services | TA Solutions Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
-    <meta name="description" content="Explore TA Solutions Ltd services including platform development, AI automation tools, and modern UX/UI & product design.">
-    <link rel="canonical" href="https://tasolutionsltd.co.uk/services/">
+  <!-- SEO -->
+  <meta name="description" content="Explore TA Solutions Ltd services including platform development, AI automation tools and modern UX/UI & product design." />
+  <link rel="canonical" href="https://tasolutionsltd.co.uk/services/" />
 
-    <!-- OG -->
-    <meta property="og:title" content="Services - TA Solutions Ltd">
-    <meta property="og:description" content="We deliver platform development, AI automation, and digital product design.">
-    <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png">
-    <meta property="og:url" content="https://tasolutionsltd.co.uk/services/">
-    <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TA Solutions Ltd" />
+  <meta property="og:title" content="Services - TA Solutions Ltd" />
+  <meta property="og:description" content="We deliver platform development, AI automation and digital product design." />
+  <meta property="og:url" content="https://tasolutionsltd.co.uk/services/" />
+  <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
 
-    <!-- Correct CSS link -->
-    <link rel="stylesheet" href="../styles.css">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services - TA Solutions Ltd" />
+  <meta name="twitter:description" content="We deliver platform development, AI automation and digital product design." />
+  <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
+
+  <link rel="icon" type="image/png" href="/images/fav-icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
 </head>
+
 <body>
-
-<header>
-    <a href="/">
-        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" alt="TA Solutions Logo">
-    </a>
-
-    <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/services/" class="active">Services</a>
-        <a href="/products/">Products</a>
-        <a href="/contact/" class="nav-cta">Contact</a>
-    </nav>
-</header>
-
-<section class="section">
+  <!-- NAVBAR -->
+  <header>
     <div class="container">
+      <nav class="nav">
+        <a class="logo" href="/">
+          <img src="/images/TA SOLUTIONS LOGO WHITE.png"
+               alt="TA Solutions Ltd logo"
+               class="logo-img" />
+        </a>
 
-        <div class="section-header center">
-            <h1 class="section-title">Our Services</h1>
-            <p class="section-subtitle">End-to-end digital product development.</p>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/services/" class="active">Services</a>
+          <a href="/products/">Products</a>
+          <a href="/contact/" class="nav-cta">Contact</a>
         </div>
-
-        <div class="grid-3">
-
-            <div class="card">
-                <h3>Platform Development</h3>
-                <p>We build scalable digital platforms for creators, businesses, and communities.</p>
-            </div>
-
-            <div class="card">
-                <h3>AI-Driven Tools</h3>
-                <p>Automation and AI-powered intelligence built into your workflows.</p>
-            </div>
-
-            <div class="card">
-                <h3>UX & Product Design</h3>
-                <p>Clean, modern user experiences tailored to your audience.</p>
-            </div>
-
-        </div>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer>
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <h1 class="section-title">Our Services</h1>
+        <p class="section-subtitle">
+          End-to-end digital product development, from concept to live platforms.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Platform Development</h3>
+          <p>
+            We build scalable digital platforms for creators, businesses and communities.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI-Driven Tools</h3>
+          <p>
+            Automation and AI-powered intelligence built into your workflows and existing products.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>UX &amp; Product Design</h3>
+          <p>
+            Clean, modern digital experiences tailored to your audience and objectives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
     <div class="container footer-inner">
-        <p>© 2025 TA Solutions Ltd</p>
-        <div class="footer-links">
-            <a href="/about/">About</a>
-            <a href="/services/">Services</a>
-            <a href="/products/">Products</a>
-            <a href="/contact/">Contact</a>
-        </div>
+      <div>
+        © 2025 TA Solutions Ltd. All rights reserved.<br />
+        Registered in England &amp; Wales · Company No. 14922253
+      </div>
+      <div class="footer-links">
+        <a href="/about/">About</a>
+        <a href="/services/">Services</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </body>
 </html>
