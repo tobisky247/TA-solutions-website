@@ -1,141 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Contact TA Solutions Ltd – Talk to Our Team</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Primary SEO -->
-  <meta name="description" content="Contact TA Solutions Ltd to discuss digital products, platforms and partnership opportunities." />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://tasolutionsltd.co.uk/contact/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="TA Solutions Ltd" />
-  <meta property="og:title" content="Contact TA Solutions Ltd – Talk to Our Team" />
-  <meta property="og:description" content="Get in touch with TA Solutions Ltd to talk about digital platform ideas, collaborations or ongoing projects." />
-  <meta property="og:url" content="https://tasolutionsltd.co.uk/contact/" />
-  <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact TA Solutions Ltd – Talk to Our Team" />
-  <meta name="twitter:description" content="Get in touch with TA Solutions Ltd to talk about digital platform ideas, collaborations or ongoing projects." />
-  <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
-
-  <link rel="icon" type="image/png" href="/images/fav-icon.png" />
-  <link rel="stylesheet" href="../styles.css" />
-  <script src="../script.js" defer></script>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <header>
+<section class="section">
     <div class="container">
-      <nav class="nav">
-        <a class="logo" href="/">
-          <img src="/images/TA SOLUTIONS LOGO WHITE.png"
-               alt="TA Solutions Ltd logo"
-               class="logo-img" />
-        </a>
-
-        <button class="nav-toggle" onclick="toggleNav()">☰</button>
-
-        <div class="nav-links" id="navLinks">
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/services/">Services</a>
-          <a href="/products/">Products</a>
-          <a href="/contact/" class="nav-cta active">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- CONTACT -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-kicker">Contact</div>
-        <h1 class="section-title">Talk to us</h1>
-        <p class="section-subtitle">
-          Share a bit about what you’re working on or exploring, and we’ll follow up with next steps.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card card">
-          <h2>Send us a message</h2>
-          <p class="muted">
-            Whether you’re exploring a new platform, looking for support with an existing product or
-            interested in partnerships, we’d be happy to hear from you.
-          </p>
-
-          <!-- Replace action URL with your real Formspree / backend endpoint -->
-          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-
-            <div>
-              <label for="message">How can we help?</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send message</button>
-          </form>
-
-          <p class="hero-footnote" style="margin-top: 1rem;">
-            Please avoid sharing sensitive or confidential information in this form.
-          </p>
+        <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h1 class="section-title">Talk to us</h1>
+            <p class="section-subtitle">
+                Share a bit about what you’re working on or exploring, and we’ll follow up with next steps.
+            </p>
         </div>
 
-        <div class="card contact-info">
-          <h3>Company details</h3>
-          <p class="muted">
-            <strong>TA Solutions Ltd</strong><br />
-            Registered in England &amp; Wales<br />
-            Company No. 14922253
-          </p>
+        <div class="contact-grid">
+            <div class="contact-card card">
+                <h2>Send us a message</h2>
+                <p class="muted">
+                    Whether you’re exploring a new platform, looking for support with an
+                    existing product or interested in partnerships, we’d be happy to hear from you.
+                </p>
 
-          <h3>General enquiries</h3>
-          <p class="muted">
-            Email:
-            <a href="mailto:support@tasolutionsltd.co.uk">support@tasolutionsltd.co.uk</a>
-          </p>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
 
-          <h3>Typical focus areas</h3>
-          <ul class="bullet-list">
-            <li>New digital product or platform concepts</li>
-            <li>Support for existing products in the creator, real estate or healthcare space</li>
-            <li>Longer-term collaborations and retained platform operations</li>
-          </ul>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone (optional)</label>
+                        <input id="phone" name="phone" type="text" placeholder="+447859713263 / 01908102803" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+
+                <p class="hero-footnote" style="margin-top:1rem;">
+                    Please avoid sharing sensitive or confidential information in this form.
+                </p>
+            </div>
+
+            <div class="card contact-info">
+                <h3>Company details</h3>
+                <p class="muted">
+                    <strong>TA Solutions Ltd</strong><br />
+                    Registered in England &amp; Wales<br />
+                    Company No. 14922253
+                </p>
+
+                <h3>General enquiries</h3>
+                <p class="muted">
+                    Email: <a href="mailto:support@tasolutionsltd.co.uk">support@tasolutionsltd.co.uk</a><br/>
+                    Phone: <strong>+44 7859 713263</strong><br/>
+                    Landline: <strong>01908 102803</strong>
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        © 2025 TA Solutions Ltd. All rights reserved.<br />
-        Registered in England &amp; Wales · Company No. 14922253
-      </div>
-      <div class="footer-links">
-        <a href="/about/">About</a>
-        <a href="/services/">Services</a>
-        <a href="/contact/">Contact</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+</section>
