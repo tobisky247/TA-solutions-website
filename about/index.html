@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About TA Solutions Ltd | UK Technology Company</title>
+  <meta charset="UTF-8" />
+  <title>About TA Solutions Ltd | UK Technology Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
-    <meta name="description" content="TA Solutions Ltd is a UK-based technology company building scalable digital platforms, AI tools, and modern software solutions for creators, businesses, and communities.">
-    <link rel="canonical" href="https://tasolutionsltd.co.uk/about/">
+  <!-- SEO -->
+  <meta name="description" content="TA Solutions Ltd is a UK-based technology company building scalable digital platforms, AI tools and software solutions for creators, businesses and communities." />
+  <link rel="canonical" href="https://tasolutionsltd.co.uk/about/" />
 
-    <!-- OG -->
-    <meta property="og:title" content="About TA Solutions Ltd">
-    <meta property="og:description" content="We build digital platforms, AI tools, and scalable solutions for creators, communities, and businesses.">
-    <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png">
-    <meta property="og:url" content="https://tasolutionsltd.co.uk/about/">
-    <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TA Solutions Ltd" />
+  <meta property="og:title" content="About TA Solutions Ltd" />
+  <meta property="og:description" content="We build digital platforms, AI tools and scalable solutions for creators, communities and businesses." />
+  <meta property="og:url" content="https://tasolutionsltd.co.uk/about/" />
+  <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
 
-    <link rel="stylesheet" href="../styles.css">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About TA Solutions Ltd" />
+  <meta name="twitter:description" content="We build digital platforms, AI tools and scalable solutions for creators, communities and businesses." />
+  <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
+
+  <link rel="icon" type="image/png" href="/images/fav-icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
 </head>
+
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="/">
+          <img src="/images/TA SOLUTIONS LOGO WHITE.png"
+               alt="TA Solutions Ltd logo"
+               class="logo-img" />
+        </a>
 
-<header>
-    <a href="/">
-        <img src="../images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" alt="TA Solutions Logo">
-    </a>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
 
-    <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about/" class="active">About</a>
+        <div class="nav-links" id="navLinks">
+          <a href="/">Home</a>
+          <a href="/about/" class="active">About</a>
+          <a href="/services/">Services</a>
+          <a href="/products/">Products</a>
+          <a href="/contact/" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <h1>About TA Solutions</h1>
+      <p class="hero-subtitle" style="max-width: 720px; margin-top: 1rem;">
+        We are a UK-based technology company building scalable products for
+        creators, organisations and communities.
+      </p>
+
+      <ul style="margin-top: 2rem; padding-left: 1.2rem;">
+        <li><strong>Digital platforms</strong> for creators and businesses</li>
+        <li><strong>AI-powered tools</strong> for automation and productivity</li>
+        <li><strong>Technology services</strong> including UX/UI, product development and more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        © 2025 TA Solutions Ltd. All rights reserved.<br />
+        Registered in England &amp; Wales · Company No. 14922253
+      </div>
+      <div class="footer-links">
+        <a href="/about/">About</a>
         <a href="/services/">Services</a>
         <a href="/products/">Products</a>
-        <a href="/contact/" class="nav-cta">Contact</a>
-    </nav>
-</header>
-
-<section class="section">
-    <div class="container">
-
-        <div class="section-header center">
-            <h1 class="section-title">About TA Solutions</h1>
-            <p class="section-subtitle">
-                A UK-based technology company building scalable platforms, AI tools,
-                and modern digital products for creators, businesses, and communities.
-            </p>
-        </div>
-
-        <div class="about-grid">
-            <div>
-                <ul class="bullet-list">
-                    <li><strong>Digital platforms</strong> for creators and businesses</li>
-                    <li><strong>AI-powered tools</strong> for automation and intelligence</li>
-                    <li><strong>Product development</strong> including UX/UI and architecture</li>
-                    <li><strong>Cloud infrastructure</strong> for scalable, modern platforms</li>
-                    <li><strong>Technical consulting</strong> for startups and SMEs</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Our Mission</h3>
-                <p class="muted">
-                    To build future-ready products that combine clean design, automation,
-                    and modern engineering — enabling creators and businesses to grow faster,
-                    operate smarter, and unlock new opportunities.
-                </p>
-            </div>
-        </div>
-
+        <a href="/contact/">Contact</a>
+      </div>
     </div>
-</section>
-
-<footer>
-    <div class="container footer-inner">
-        <p>© 2025 TA Solutions Ltd</p>
-
-        <div class="footer-links">
-            <a href="/about/">About</a>
-            <a href="/services/">Services</a>
-            <a href="/products/">Products</a>
-            <a href="/contact/">Contact</a>
-        </div>
-    </div>
-</footer>
-
+  </footer>
 </body>
 </html>
