@@ -216,3 +216,63 @@ footer {
   margin-bottom: 1.75rem;
 }
 
+/* ===========================================================
+   NAVIGATION FIX (DESKTOP + MOBILE)
+   =========================================================== */
+
+/* RESET nav links (remove blue + underline) */
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+/* Active page */
+.nav-links a.active {
+  color: #ffffff;
+}
+
+/* Desktop: hide hamburger */
+@media (min-width: 901px) {
+  .nav-toggle {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+}
+
+/* Mobile: show hamburger + stacked menu */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: #050816;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.6rem 0;
+  }
+}
