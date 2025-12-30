@@ -170,3 +170,49 @@ footer {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ===========================================================
+   GLOBAL VERTICAL SPACING FIX (RESTORES RHYTHM)
+   =========================================================== */
+
+/* Space between stacked cards */
+.card + .card {
+  margin-top: 1.75rem;
+}
+
+/* Space after section headers */
+.section-header {
+  margin-bottom: 3rem;
+}
+
+/* Space between headings and content blocks */
+.section h1,
+.section h2,
+.section h3 {
+  margin-bottom: 1.25rem;
+}
+
+/* Space between paragraphs */
+.section p + p {
+  margin-top: 1rem;
+}
+
+/* Space between lists and surrounding content */
+.section ul {
+  margin-top: 1rem;
+}
+
+.section ul li + li {
+  margin-top: 0.5rem;
+}
+
+/* Restore breathing room in content-heavy sections */
+.section .card {
+  margin-bottom: 0;
+}
+
+/* Explicit spacing for capability / product blocks */
+.section .card:not(:last-child) {
+  margin-bottom: 1.75rem;
+}
+
