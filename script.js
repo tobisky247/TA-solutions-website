@@ -1,30 +1,42 @@
+/* =========================
+   MOBILE NAV TOGGLE
+   ========================= */
 function toggleNav() {
   const nav = document.getElementById('navLinks');
-  if (nav) nav.classList.toggle('open');
+  if (nav) {
+    nav.classList.toggle('open');
+  }
 }
 
-
-<script>
+/* =========================
+   CONTACT FORM (FORMSPREE)
+   ========================= */
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
   const success = document.querySelector('.form-success');
 
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
+  if (!form) return; // safely exit if no form on page
 
-      const res = await fetch(form.action, {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
-      if (res.ok) {
+      if (response.ok) {
         form.reset();
-        success.hidden = false;
+        if (success) success.hidden = false;
       } else {
         alert('Something went wrong. Please try again.');
       }
-    });
-  }
-</script>
+    } catch (error) {
+      alert('Network error. Please try again later.');
+    }
+  });
+});
