@@ -1,8 +1,7 @@
 /* ===========================================================
-   TA SOLUTIONS – GLOBAL STYLE SHEET (FINAL)
+   TA SOLUTIONS – GLOBAL STYLE SHEET (FINAL, LOCKED)
    =========================================================== */
 
-/* ---------- CSS VARIABLES ---------- */
 :root {
   --bg: #050816;
   --bg-soft: #0b1020;
@@ -21,7 +20,7 @@
   --shadow: 0 24px 60px rgba(15,23,42,0.6);
 }
 
-/* ---------- RESET ---------- */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -39,19 +38,7 @@ body {
   line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ---------- LAYOUT ---------- */
 .container {
-  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -61,9 +48,7 @@ img {
   padding: 5rem 0;
 }
 
-/* ===========================================================
-   NAVBAR
-   =========================================================== */
+/* NAV */
 header {
   position: sticky;
   top: 0;
@@ -76,8 +61,8 @@ header {
 .nav {
   height: 76px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-img {
@@ -87,180 +72,101 @@ header {
 .nav-links {
   display: flex;
   gap: 1.8rem;
-  align-items: center;
-}
-
-.nav-links a {
-  color: var(--muted);
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: var(--text);
 }
 
 .nav-cta {
-  padding: 0.6rem 1.6rem;
-  border-radius: var(--pill);
   background: var(--accent);
   color: #fff !important;
+  padding: 0.6rem 1.6rem;
+  border-radius: var(--pill);
   font-weight: 600;
-  box-shadow: 0 10px 25px rgba(124,58,237,0.35);
 }
 
-.nav-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  color: #fff;
-  border: none;
-}
-
-/* ===========================================================
-   CARDS / COMMON
-   =========================================================== */
+/* CARDS */
 .card {
   background: var(--card-bg);
-  padding: 2rem;
   border-radius: var(--radius);
   border: 1px solid var(--card-border);
+  padding: 2rem;
   box-shadow: var(--shadow);
 }
 
 /* ===========================================================
-   CONTACT (LOCKED & CORRECT)
+   CONTACT — HARD LOCKED DESKTOP GRID
    =========================================================== */
 
-/* DESKTOP / TABLET — ALWAYS 2 COLUMNS */
 .contact-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  display: grid !important;
+  grid-template-columns: 1.35fr 0.65fr !important;
   gap: 2.5rem;
-  align-items: start;
+  align-items: flex-start;
   margin-top: 2.5rem;
 }
 
 /* FORM */
-.contact-card h2 {
-  margin-bottom: 1rem;
-}
-
-.contact-card .muted {
-  color: var(--muted);
-  margin-bottom: 1.6rem;
-}
-
 .contact-form .form-group {
   margin-bottom: 1.4rem;
 }
 
 .contact-form label {
   display: block;
-  font-size: 0.95rem;
-  font-weight: 500;
   margin-bottom: 0.4rem;
+  font-size: 0.95rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 0.9rem 1rem;
-  border-radius: 10px;
   background: #020617;
+  border-radius: 10px;
   border: 1px solid rgba(148,163,184,0.45);
   color: #fff;
-  font-size: 1rem;
 }
 
-/* FORCE BUTTON CONSISTENCY (FIXES YOUR ISSUE) */
 .contact-form button {
-  appearance: none;
-  -webkit-appearance: none;
-  border: none;
-  background: none;
+  all: unset;
 }
 
 .contact-form .btn {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1rem;
   padding: 0.9rem 1.8rem;
-  border-radius: var(--pill);
   background: var(--accent);
   color: #fff;
+  border-radius: var(--pill);
   font-weight: 600;
-  font-size: 0.95rem;
   cursor: pointer;
   box-shadow: 0 14px 30px rgba(124,58,237,0.45);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .contact-form .btn:hover {
   background: var(--accent-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 18px 38px rgba(124,58,237,0.6);
 }
 
-/* SUCCESS MESSAGE */
+/* SUCCESS */
 .form-success {
-  margin-bottom: 1.5rem;
-  padding: 0.9rem 1rem;
-  border-radius: 10px;
   background: rgba(34,197,94,0.15);
   border: 1px solid rgba(34,197,94,0.35);
   color: #bbf7d0;
+  padding: 0.9rem;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
 }
 
-/* ===========================================================
-   FOOTER
-   =========================================================== */
+/* FOOTER */
 footer {
+  margin-top: 4rem;
+  padding: 2.8rem 0;
   border-top: 1px solid rgba(255,255,255,0.05);
   background: #050816;
-  padding: 2.8rem 0;
-  margin-top: 4rem;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.4rem;
 }
 
 /* ===========================================================
-   RESPONSIVE
+   MOBILE ONLY (STRICT)
    =========================================================== */
-@media (max-width: 900px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #050816;
-    padding: 1rem;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    right: 0;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-}
-
-/* ONLY stack contact on REAL mobile */
 @media (max-width: 640px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
