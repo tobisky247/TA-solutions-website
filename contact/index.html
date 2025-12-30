@@ -76,7 +76,16 @@
                 </p>
 
                 <form
-                  class="contact-form" action="https://formspree.io/f/xregveja"method="POST" >
+                      class="contact-form"
+                       action="https://formspree.io/f/xregveja"
+                       method="POST"
+                        >
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <input type="hidden" name="_replyto" value="%{email}">
+
+
+
                     
                     <p class="form-success" hidden>  Thank you — your message has been sent. We’ll be in touch shortly.
                     </p>
@@ -95,7 +104,7 @@
 
                     <div class="form-group">
                         <label for="phone">Phone (optional)</label>
-                        <input id="phone" name="phone" type="text" placeholder="enter phone numner">
+                        <input id="phone" name="phone" type="text" placeholder="enter phone number">
                     </div>
 
                     <div class="form-group">
