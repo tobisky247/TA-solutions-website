@@ -2,213 +2,563 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TA Solutions Ltd – Digital Platforms & AI Tools</title>
+  <title>TA Solutions Ltd — Digital Platforms & Venture Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="description" content="TA Solutions Ltd designs, builds and operates digital platforms, AI tools and technology services for creators, businesses and communities." />
+  <meta name="description" content="TA Solutions Ltd is a UK technology company that builds, launches and operates modern digital platforms for real-world markets." />
   <link rel="canonical" href="https://tasolutionsltd.co.uk/" />
 
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="TA Solutions Ltd" />
-  <meta property="og:title" content="TA Solutions Ltd – Digital Platforms & AI Tools" />
-  <meta property="og:description" content="We build, launch and operate digital platforms and AI tools for ambitious teams who need more than a website – they need a platform." />
+  <meta property="og:title" content="TA Solutions Ltd — Digital Platforms & Venture Studio" />
+  <meta property="og:description" content="TA Solutions Ltd is a UK technology company that builds, launches and operates modern digital platforms for real-world markets." />
   <meta property="og:url" content="https://tasolutionsltd.co.uk/" />
   <meta property="og:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
 
+  <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TA Solutions Ltd — Digital Platforms & Venture Studio" />
+  <meta name="twitter:description" content="We build, launch and operate modern digital platforms." />
+  <meta name="twitter:image" content="https://tasolutionsltd.co.uk/images/og-image.png" />
 
-  <link rel="icon" type="image/png" href="images/fav.icon-white.png" />
+  <!-- Favicons & Styles -->
+  <link rel="icon" type="image/png" href="./images/favicon-black.png" />
+  <link rel="apple-touch-icon" href="./images/favicon-black.png" />
   <link rel="stylesheet" href="./styles.css" />
   <script src="./script.js" defer></script>
+
+  <!-- Schema.org Organization Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TA Solutions Ltd",
+    "url": "https://tasolutionsltd.co.uk",
+    "logo": "https://tasolutionsltd.co.uk/images/og-image.png",
+    "email": "info@tasolutionsltd.co.uk",
+    "telephone": "+44 7859 713263",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Milton Keynes",
+      "addressCountry": "GB"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "UK Company Number",
+      "value": "14922253"
+    }
+  }
+  </script>
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="container">
-      <nav class="nav">
-        <a class="logo" href="/">
-          <img src="images/TA SOLUTIONS LOGO WHITE.png" class="logo-img" />
-        </a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand-link" aria-label="TA Solutions Ltd Homepage">
+        <img src="./images/logo-dark.png" alt="TA Solutions Ltd" class="logo-img" />
+      </a>
 
-        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
 
-        <div class="nav-links" id="navLinks">
-          <a href="/" class="active">Home</a>
-          <a href="/about/">About</a>
-          <a href="/services/">Services</a>
-          <a href="/products/">Products</a>
-          <a href="/contact/" class="nav-cta">Contact</a>
-        </div>
-      </nav>
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link active">Home</a></li>
+        <li><a href="#platforms" class="nav-link">Platforms</a></li>
+        <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+        <li><a href="/about/" class="nav-link">About</a></li>
+        <li><a href="/contact/" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="/contact/" class="btn btn-primary btn-sm">Talk to us</a>
+      </div>
     </div>
   </header>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="section hero hero--home">
-      <div class="hero-orbit hero-orbit--one"></div>
-      <div class="hero-orbit hero-orbit--two"></div>
-
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-pill">UK-based technology company</div>
-
-          <h1 class="hero-title">
-            We build, launch and operate<br />
-            <span class="hero-title-accent">modern digital platforms.</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            TA Solutions Ltd designs and develops scalable technology for creators, founders and organisations
-            who need more than a website – they need a platform.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="/products/" class="btn btn-primary">Explore our platforms</a>
-            <a href="/contact/" class="btn btn-ghost">Talk to us</a>
-          </div>
-
-          <p class="hero-footnote hero-footnote--home">
-            Registered in England & Wales · Company No. 14922253
-          </p>
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">
+          <span>UK Technology Company</span>
+        </div>
+        <h1 class="display-title">
+          We build, launch and operate modern digital platforms.
+        </h1>
+        <p class="hero-subtitle">
+          TA Solutions is a UK technology company creating practical digital products for real-world markets.
+        </p>
+        <div class="hero-actions">
+          <a href="#platforms" class="btn btn-primary btn-lg">Explore our platforms</a>
+          <a href="/about/" class="btn btn-secondary btn-lg">About TA Solutions</a>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Registered in England &amp; Wales
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            Company No. 14922253
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Milton Keynes, UK
+          </span>
         </div>
       </div>
     </section>
 
-
-    <!-- WHAT WE DO -->
-    <section class="section section--gradient">
+    <!-- PRODUCT IMAGE STRIP (Framer visual reference) -->
+    <section class="preview-strip-section" aria-label="Platform preview imagery">
       <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">What we do</div>
-          <h2 class="section-title">End-to-end digital product and platform delivery</h2>
-          <p class="section-subtitle">
-            From first idea through to live operation, we help teams shape, build and run platforms that creators and customers use every day.
-          </p>
-        </div>
-
-        <div class="grid-3 feature-grid">
-          <article class="card feature-card feature-card--primary">
-            <h3>Platform development</h3>
-            <p>Strategy, design and engineering for subscription platforms and digital products that need to scale.</p>
-          </article>
-
-          <article class="card feature-card">
-            <h3>AI-driven tools</h3>
-            <p>Document intelligence, workflow automation and custom AI tooling for secure teams and organisations.</p>
-          </article>
-
-          <article class="card feature-card">
-            <h3>UX, product & delivery</h3>
-            <p>Research, UX and modular delivery that keeps teams shipping with confidence.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- WHY TEAMS CHOOSE US -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Why teams work with us</div>
-          <h2 class="section-title">Built for real-world products, not demos</h2>
-          <p class="section-subtitle">We focus on outcomes: real users, real operations, real platforms.</p>
-        </div>
-
-        <div class="grid-3 benefit-grid">
-          <div class="card benefit-card"><h3>Platform-first thinking</h3><p>We build full platforms, not static websites.</p></div>
-          <div class="card benefit-card"><h3>Experience in sensitive spaces</h3><p>Creator economy · Public sector · Regulated areas.</p></div>
-          <div class="card benefit-card"><h3>Design + engineering together</h3><p>No silos — everything shaped and built together.</p></div>
-          <div class="card benefit-card"><h3>Focused, modular delivery</h3><p>Ship meaningful slices and iterate quickly.</p></div>
-          <div class="card benefit-card"><h3>Operational handover</h3><p>Monitoring · Support · Documentation.</p></div>
-          <div class="card benefit-card"><h3>Partnership mindset</h3><p>We grow and refine platforms over time.</p></div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- OUR PLATFORMS (FIXED GRID) -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Our products & platforms</div>
-          <h1 class="section-title">Platforms we build and operate</h1>
-          <p class="section-subtitle wider">
-            Alongside client work, we design, build and run our own products — keeping us close to payments, compliance and real user behaviour.
-          </p>
-        </div>
-
-        <div class="grid-2 product-grid">
-          <div class="product-feature">
-            <div>
-              <h4 class="muted">Creator Platform</h4>
-              <h2>LuvlyFans</h2>
-              <p>A modern subscription and creator platform with sustainable earnings and strong support for creators and fans.</p>
-              <a href="https://luvlyfans.com" class="link">Visit LuvlyFans</a>
+        <div class="preview-strip">
+          <div class="strip-item featured">
+            <img src="./images/luvlyfans.png" alt="LuvlyFans creator platform interface" loading="lazy" />
+            <div class="strip-caption">
+              <div>
+                <div class="strip-caption-title">LuvlyFans Platform</div>
+                <div class="strip-caption-sub">Creator Monetisation &amp; Subscriptions</div>
+              </div>
+              <span class="badge badge-live">Live</span>
             </div>
           </div>
 
-          <div class="product-feature">
-            <div>
-              <h4 class="muted">AI Tool</h4>
-              <h2>Document Intelligence</h2>
-              <p>Upload, organise and query documents using advanced AI — built for teams needing fast insights without losing data control.</p>
-              <a href="#" class="link">Learn more</a>
+          <div class="strip-item">
+            <img src="./images/Dashboard-min (1).png" alt="Platform operations analytics dashboard" loading="lazy" />
+            <div class="strip-caption">
+              <div>
+                <div class="strip-caption-title">Platform Intelligence</div>
+                <div class="strip-caption-sub">Operational &amp; Document AI</div>
+              </div>
+              <span class="badge badge-purple">Active</span>
+            </div>
+          </div>
+
+          <div class="strip-item">
+            <img src="./images/Mobile Product Page-min.png" alt="Responsive product experience" loading="lazy" />
+            <div class="strip-caption">
+              <div>
+                <div class="strip-caption-title">Mobile Experience</div>
+                <div class="strip-caption-sub">Responsive Digital Products</div>
+              </div>
+              <span class="badge badge-neutral">Native</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <!-- WHO WE WORK WITH (FIXED SPACING) -->
-    <section class="section">
+    <!-- PLATFORMS SECTION -->
+    <section class="platforms-section" id="platforms">
       <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Who we work with</div>
-          <h1 class="section-title">Teams who need more than a template</h1>
-          <p class="section-subtitle wider">
-            We’re a good fit for teams building serious products and platforms, even if they’re still early.
+        <div class="section-head center">
+          <span class="eyebrow">Owned &amp; Operated</span>
+          <h2 class="section-title">Platforms we build and operate</h2>
+          <p class="section-desc">
+            We focus on software products we design, launch and run with long-term commercial intent.
           </p>
         </div>
 
-        <div class="industry-list">
-          Creator-focused platforms · Early-stage SaaS & marketplaces · Agencies needing delivery support · 
-          Public & regulated services · Founders with new product ideas
+        <div class="platform-grid">
+          <!-- Flagship: LuvlyFans -->
+          <article class="platform-card flagship">
+            <div>
+              <div class="platform-header">
+                <div class="platform-brand">
+                  <div class="platform-logo-box">
+                    <img src="./images/fav-icon.png" alt="LuvlyFans logo" />
+                  </div>
+                  <div>
+                    <h3 class="platform-name">LuvlyFans</h3>
+                    <span class="platform-type">Creator Economy</span>
+                  </div>
+                </div>
+                <span class="badge badge-live">Live Platform</span>
+              </div>
+
+              <p class="platform-desc">
+                A creator platform designed to help creators connect with their audiences, share content and earn through subscriptions, tips, messages and digital purchases.
+              </p>
+
+              <div class="platform-preview-image">
+                <img src="./images/luvlyfans.png" alt="LuvlyFans creator platform interface overview" loading="lazy" />
+              </div>
+
+              <ul class="platform-features-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Automated recurring subscriptions, tip handling and paid messaging
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Secure creator onboarding, compliance checks and fan access
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Fully operated and maintained infrastructure by TA Solutions Ltd
+                </li>
+              </ul>
+            </div>
+
+            <div class="platform-card-footer">
+              <a href="https://luvlyfans.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Visit luvlyfans.com
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+              <span style="font-size: 0.8125rem; color: var(--text-light);">Independent Platform Identity</span>
+            </div>
+          </article>
+
+          <!-- Verified Platform: Document Intelligence AI -->
+          <article class="platform-card">
+            <div>
+              <div class="platform-header">
+                <div class="platform-brand">
+                  <div class="platform-logo-box" style="background: #F1F5F9;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="platform-name">Document Intelligence</h3>
+                    <span class="platform-type">AI-Enabled Platform</span>
+                  </div>
+                </div>
+                <span class="badge badge-purple">Active</span>
+              </div>
+
+              <p class="platform-desc">
+                Intelligent processing and search tooling designed for organisations to upload, organise, query and retrieve insights from complex document sets securely.
+              </p>
+
+              <div class="platform-preview-image">
+                <img src="./images/Dashboard-min (1).png" alt="Document intelligence tool dashboard" loading="lazy" />
+              </div>
+
+              <ul class="platform-features-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  High-speed document parsing and semantic retrieval
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Built for controlled environments and sensitive data workflows
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Modular architecture ready for internal and commercial deployments
+                </li>
+              </ul>
+            </div>
+
+            <div class="platform-card-footer">
+              <a href="/contact/" class="btn btn-secondary">Enquire about platform</a>
+              <span style="font-size: 0.8125rem; color: var(--text-light);">Proprietary Tooling</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES SECTION -->
+    <section class="capabilities-section" id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Studio Capabilities</span>
+          <h2 class="section-title">From idea to operating platform</h2>
+          <p class="section-desc">
+            We combine product discipline, technical engineering and long-term operations to turn practical concepts into working platforms.
+          </p>
         </div>
 
-        <div class="cta-block">
-          <h2>Planning or running a platform?</h2>
-          <p>
-            Share a bit about what you’re working on and we’ll explore how we can help — from shaping the first version to operating a live product.
-          </p>
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <span class="capability-num">01 / DISCOVERY</span>
+            <h3 class="capability-title">Product strategy &amp; discovery</h3>
+            <p class="capability-desc">
+              Defining viable value propositions, mapping real user needs, scoping early releases and architecting platforms with clear commercial models.
+            </p>
+          </div>
 
-          <div class="cta-buttons">
-            <a href="/contact/" class="btn btn-primary">Talk to us</a>
-            <a href="/services/" class="btn btn-ghost">View our services</a>
+          <div class="capability-card">
+            <span class="capability-num">02 / DESIGN</span>
+            <h3 class="capability-title">User experience &amp; product design</h3>
+            <p class="capability-desc">
+              Designing uncluttered, accessible digital experiences and brand systems that make complex user workflows feel straightforward and natural.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <span class="capability-num">03 / ENGINEERING</span>
+            <h3 class="capability-title">Platform development &amp; engineering</h3>
+            <p class="capability-desc">
+              Building secure, scalable front-end and back-end systems, API integrations, payment processing and resilient data architectures.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <span class="capability-num">04 / OPERATIONS</span>
+            <h3 class="capability-title">Launch, operations &amp; improvement</h3>
+            <p class="capability-desc">
+              Managing hosting, security patching, customer support workflows, performance telemetry and ongoing iterations after launch.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- DARK SECTION: How We Work & Experience -->
+    <section class="dark-section" id="process">
+      <div class="container">
+        <!-- How we work -->
+        <div class="section-head">
+          <span class="eyebrow">Operating Model</span>
+          <h2 class="section-title">How we work</h2>
+          <p class="section-desc">
+            We do more than deliver a one-off website or prototype. We build digital products with the intention of launching, maintaining and improving them over time.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <h3 class="process-step-title">Understand</h3>
+            <p class="process-step-desc">
+              Isolating genuine market problems, regulatory constraints, technical viability and user needs before writing code.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <h3 class="process-step-title">Design</h3>
+            <p class="process-step-desc">
+              Prototyping core workflows, information architecture, interface states and transaction paths for complete clarity.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <h3 class="process-step-title">Build</h3>
+            <p class="process-step-desc">
+              Developing production-ready applications with test coverage, clean code standards and scalable infrastructure.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-num">04</div>
+            <h3 class="process-step-title">Operate</h3>
+            <p class="process-step-desc">
+              Active server monitoring, ongoing maintenance, feature refinement and operational support throughout the platform lifecycle.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience section -->
+        <div class="section-head" style="margin-top: 2rem;">
+          <span class="eyebrow">Domain Focus</span>
+          <h2 class="section-title">Built for complex spaces</h2>
+          <p class="section-desc">
+            We focus our energy where security, reliability and thoughtful user workflows matter most.
+          </p>
+        </div>
+
+        <div class="sectors-grid">
+          <div class="sector-card">
+            <h3 class="sector-title">Creator economy</h3>
+            <p class="sector-desc">
+              Audience monetization, digital purchases, paywalled media, automated billing and direct community engagement.
+            </p>
+          </div>
+
+          <div class="sector-card">
+            <h3 class="sector-title">AI-enabled tools</h3>
+            <p class="sector-desc">
+              Document querying, intelligent workflow automation and retrieval tools built for accuracy and data privacy.
+            </p>
+          </div>
+
+          <div class="sector-card">
+            <h3 class="sector-title">Public services</h3>
+            <p class="sector-desc">
+              Clear digital services meeting accessibility standards, straightforward navigation and reliable uptime.
+            </p>
+          </div>
+
+          <div class="sector-card">
+            <h3 class="sector-title">Regulated &amp; sensitive services</h3>
+            <p class="sector-desc">
+              Systems designed with privacy, data protection, verification checks and responsible compliance at the core.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-split">
+          <div>
+            <span class="eyebrow">About TA Solutions</span>
+            <h2 class="about-quote">
+              “Turning useful ideas into working, resilient digital platforms.”
+            </h2>
+            <div class="company-meta-box">
+              <div><strong>Registered entity:</strong> TA Solutions Ltd</div>
+              <div><strong>Company number:</strong> 14922253 (England &amp; Wales)</div>
+              <div><strong>Location:</strong> Milton Keynes, United Kingdom</div>
+              <div><strong>Contact:</strong> info@tasolutionsltd.co.uk</div>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <p>
+              TA Solutions Ltd is a UK-based technology company focused on turning useful ideas into working digital platforms. We combine product thinking, design and engineering to build services that can launch, grow and operate in the real world.
+            </p>
+            <p>
+              Rather than acting as a volume agency, we operate with a studio ethos: developing owned products such as LuvlyFans while partnering selectively on ventures and platforms requiring dedicated product attention.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="/about/" class="btn btn-secondary">Read full studio profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (From Framer reference, rewritten for Venture/Product Studio) -->
+    <section class="faq-section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head center">
+          <span class="eyebrow">Common Questions</span>
+          <h2 class="section-title">Frequently asked questions</h2>
+          <p class="section-desc">
+            How we operate our platforms and partner with teams.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What does TA Solutions Ltd do?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>TA Solutions Ltd is a UK technology company and product studio. We conceive, design, build and operate digital platforms such as LuvlyFans, alongside developing proprietary AI and document tooling.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How is TA Solutions related to LuvlyFans?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>LuvlyFans is a live creator platform owned and operated by TA Solutions Ltd. LuvlyFans maintains its own distinct consumer brand identity, while TA Solutions Ltd manages the underlying technology, compliance and infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you take on external projects or partnerships?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We partner selectively with founders, organisations and teams seeking to build and operate platforms in creator economy, workflow automation or regulated domains.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Where is TA Solutions Ltd based?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We are registered in England &amp; Wales under company number 14922253 and based in Milton Keynes, United Kingdom.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <h2 class="cta-title">Have a platform or partnership in mind?</h2>
+          <p class="cta-desc">
+            We are open to conversations about digital products, technology partnerships and opportunities to build useful platforms.
+          </p>
+          <div class="cta-actions">
+            <a href="/contact/" class="btn btn-white btn-lg">Contact TA Solutions</a>
+            <a href="mailto:info@tasolutionsltd.co.uk" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">info@tasolutionsltd.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        © 2025 TA Solutions Ltd. All rights reserved.<br />
-        Registered in England & Wales · Company No. 14922253
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="/" class="brand-link" style="margin-bottom: 0.75rem;">
+            <img src="./images/logo-dark.png" alt="TA Solutions Ltd" class="logo-img" />
+          </a>
+          <p class="footer-brand-desc">
+            A UK technology company building, launching and operating modern digital platforms.
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <span class="footer-legal-badge">Company No. 14922253</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#platforms">Platforms</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Platforms</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://luvlyfans.com" target="_blank" rel="noopener noreferrer">LuvlyFans</a></li>
+            <li><a href="/products/">Document Intelligence</a></li>
+            <li><a href="/products/">All Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <div style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+            <p>Milton Keynes, United Kingdom</p>
+            <p style="margin-top: 0.5rem;"><a href="mailto:info@tasolutionsltd.co.uk">info@tasolutionsltd.co.uk</a></p>
+            <p style="margin-top: 0.25rem;">+44 7859 713263</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="/about/">About</a>
-        <a href="/services/">Services</a>
-        <a href="/products/">Products</a>
-        <a href="/contact/">Contact</a>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 TA Solutions Ltd. Registered in England &amp; Wales.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </div>
       </div>
     </div>
   </footer>
